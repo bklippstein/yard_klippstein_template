@@ -1,5 +1,5 @@
 
-= Klippstein Template For Ruby Yard
+= Klippstein Template for Ruby YARD
 http://bklippstein.github.com/yard_klippstein_template/frames.html
 
 == Features
