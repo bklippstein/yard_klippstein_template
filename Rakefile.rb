@@ -36,23 +36,13 @@ end
 
   
 #  ----------------------------------------------------------------------------------------------
-#  Local Tasks
+#  Hide Tasks
 #  
  
-remove_task 'audit' 
-remove_task 'dcov' 
-remove_task 'debug_email' 
-remove_task 'debug_gem' 
-remove_task 'deploy' 
-remove_task 'deps:email' 
-remove_task 'install_gem'
-remove_task 'multi' 
-remove_task 'newb' 
-remove_task 'publish_docs' 
-remove_task 'rdoc'
-remove_task 'ridocs'
-
-#Dir['tasks/**/*.rake'].each { |t| load t }  
+ hide_tasks [ :announce, :audit, :check_extra_deps, :clobber_docs, :clobber_package, :default ]
+ hide_tasks [ :dcov, :debug_email, :docs, :gem, :git_add, :git_commit, :git_push, :install_gem ]
+ hide_tasks [ :newb, :package, :post_blog, :publish_docs, :release, :release_sanity, :release_to_gemcutter ]
+ hide_tasks [ :repackage, :ridocs, :sleep_15, :sleep_5, :utf8, :yard, :yard_post ]
   
   
   
