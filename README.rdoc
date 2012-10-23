@@ -2,9 +2,14 @@
 = Klippstein Template For Ruby Yard
 http://bklippstein.github.com/yard_klippstein_template/frames.html
 
+== Features
+Just some small improvements
+* clear visual grouping
+* source code is always visible
 
 == Usage
-  require 'yard_klippstein_template'             
+Put this in your .yardopts file:
+  --plugin yard_klippstein_template             
 
   
 == More Info
