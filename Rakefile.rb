@@ -20,7 +20,7 @@ $hoe = Hoe.spec Drumherum.project_name do
   # self.rubyforge_name = 'yourgemx' # if different than 'yourgem'
    
   developer('Bjoern Klippstein', 'klippstein@klippstein.com')
-  summary               = 'Yard template'  
+  summary               = 'Klippstein Template for Ruby YARD'  
   extra_dev_deps        << ['drumherum',    '>= 0.1.26']
 
   remote_rdoc_dir = '' # Release to root only one project  
