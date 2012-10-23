@@ -1,86 +1,86 @@
 
 
-/* Headlines */
-h2 {
-  padding: 10px 0 3px 0;
-  border-top: 1px #555 solid;
-  border-bottom: 0px;
-  margin: 3em 0 0.5em;
-  font-size: 1.7em;  
-}
+  /* Headlines */
+  h2 {
+    padding: 10px 0 3px 0;
+    border-top: 1px #555 solid;
+    border-bottom: 0px;
+    margin: 3em 0 0.5em;
+    font-size: 1.7em;  
+  }
 
-p.signature, h3.signature {
-    font-family: Monaco,Consolas,Courier,monospace;
-    font-size: 1.5em;
-}
+  p.signature, h3.signature {
+      font-family: Monaco,Consolas,Courier,monospace;
+      font-size: 1.5em;
+  }
 
-.method_details {
-    border-top: 0px;
-    margin-top: 50px;
-    padding-top: 0;
-    clear:both;
-}
+  .method_details {
+      border-top: 0px;
+      margin-top: 50px;
+      padding-top: 0;
+      clear:both;
+  }
 
-.method_details.first { 
-    margin-top: 15px;
-}
-
-
-
-/* method summary */
-
-ul.summary  {
-  border-bottom: 1px #ccc dotted;
-  margin-left:0px; padding-left:0px;
-}
-
-ul.summary li {
-  border-top: 1px #ccc  dotted;
-  margin: 0px;
-  padding: 1px 0px 1px 0px;
- 
-}
+  .method_details.first { 
+      margin-top: 15px;
+  }
 
 
-ul.summary a:link, ul.summary a:visited {
-    font-size: 0.9em;
-    font-weight:normal !important;
-}
 
-.summary .summary_signature {
-    background: none;
-    border: 0px;
-    padding: 1px 10px;
-}
+  /* method summary */
 
-.summary .summary_desc {
-    display: inline;
-    margin:0px;
-}
+  ul.summary  {
+    border-bottom: 1px #ccc dotted;
+    margin-left:0px; padding-left:0px;
+  }
 
-p.signature, h3.signature {
-    background: none repeat scroll 0 0 #FAEECC;
-    border: 0;
-
-}
+  ul.summary li {
+    border-top: 1px #ccc  dotted;
+    margin: 0px;
+    padding: 1px 0px 1px 0px;
+   
+  }
 
 
-/* method details */
-.note.returns_void {
-    display :none;
-}
+  ul.summary a:link, ul.summary a:visited {
+      font-size: 0.9em;
+      font-weight:normal !important;
+  }
+
+  .summary .summary_signature {
+      background: none;
+      border: 0px;
+      padding: 1px 10px;
+  }
+
+  .summary .summary_desc {
+      display: inline;
+      margin:0px;
+  }
+
+  p.signature, h3.signature {
+      background: none repeat scroll 0 0 #FAEECC;
+      border: 0;
+
+  }
 
 
-.showSource {
-    display: none;
-    float: right;    
-}
+  /* method details */
+  .note.returns_void {
+      display :none;
+  }
 
-table.source_code {
-    margin-left: 100px;
-    border-left: 0px;
-    display: table !important;
-}
+
+  .showSource {
+      display: none;
+      float: right;    
+  }
+
+  table.source_code {
+      margin-left: 100px;
+      border-left: 0px;
+      display: table !important;
+  }
 
 
 
