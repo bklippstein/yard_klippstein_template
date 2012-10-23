@@ -66,95 +66,86 @@
     <iframe id="search_frame"></iframe>
 
     <div id="content"><div id='filecontents'>
-<p>/* Headlines */ h2 
-<pre class="code ruby"><code>padding: 10px 0 3px 0;
-border-top: 1px #555 solid;
-border-bottom: 0px;
-margin: 3em 0 0.5em;
-font-size: 1.7em;</code></pre>
+<pre class="code ruby"><code>/* Headlines */
+h2 {
+  padding: 10px 0 3px 0;
+  border-top: 1px #555 solid;
+  border-bottom: 0px;
+  margin: 3em 0 0.5em;
+  font-size: 1.7em;  
+}
 
-<p></p>
+p.signature, h3.signature {
+    font-family: Monaco,Consolas,Courier,monospace;
+    font-size: 1.5em;
+}
 
-<p>p.signature, h3.signature 
-<pre class="code ruby"><code>font-family: Monaco,Consolas,Courier,monospace;
-font-size: 1.5em;</code></pre>
+.method_details {
+    border-top: 0px;
+    margin-top: 50px;
+    padding-top: 0;
+    clear:both;
+}
 
-<p></p>
+.method_details.first { 
+    margin-top: 15px;
+}
 
-<p>.method_details 
-<pre class="code ruby"><code>border-top: 0px;
-margin-top: 50px;
-padding-top: 0;
-clear:both;</code></pre>
+/* method summary */
 
-<p></p>
+ul.summary  {
+  border-bottom: 1px #ccc dotted;
+  margin-left:0px; padding-left:0px;
+}
 
-<p>.method_details.first 
-<pre class="code ruby"><code>margin-top: 15px;</code></pre>
+ul.summary li {
+  border-top: 1px #ccc  dotted;
+  margin: 0px;
+  padding: 1px 0px 1px 0px;
 
-<p></p>
+}
 
-<p>/* method summary */</p>
+ul.summary a:link, ul.summary a:visited {
+    font-size: 0.9em;
+    font-weight:normal !important;
+}
 
-<p>ul.summary  
-<pre class="code ruby"><code>border-bottom: 1px #ccc dotted;
-margin-left:0px; padding-left:0px;</code></pre>
+.summary .summary_signature {
+    background: none;
+    border: 0px;
+    padding: 1px 10px;
+}
 
-<p></p>
+.summary .summary_desc {
+    display: inline;
+    margin:0px;
+}
 
-<p>ul.summary li 
-<pre class="code ruby"><code>border-top: 1px #ccc  dotted;
-margin: 0px;
-padding: 1px 0px 1px 0px;</code></pre>
+p.signature, h3.signature {
+    background: none repeat scroll 0 0 #FAEECC;
+    border: 0;
 
-<p></p>
+}
 
-<p>ul.summary a:link, ul.summary a:visited 
-<pre class="code ruby"><code>font-size: 0.9em;
-font-weight:normal !important;</code></pre>
+/* method details */
+.note.returns_void {
+    display :none;
+}
 
-<p></p>
+.showSource {
+    display: none;
+    float: right;    
+}
 
-<p>.summary .summary_signature 
-<pre class="code ruby"><code>background: none;
-border: 0px;
-padding: 1px 10px;</code></pre>
-
-<p></p>
-
-<p>.summary .summary_desc 
-<pre class="code ruby"><code>display: inline;
-margin:0px;</code></pre>
-
-<p></p>
-
-<p>p.signature, h3.signature 
-<pre class="code ruby"><code>background: none repeat scroll 0 0 #FAEECC;
-border: 0;</code></pre>
-
-<p></p>
-
-<p>/* method details */ .note.returns_void 
-<pre class="code ruby"><code><span class='id identifier rubyid_display'>display</span> <span class='symbol'>:none</span><span class='semicolon'>;</span></code></pre>
-
-<p></p>
-
-<p>.showSource 
-<pre class="code ruby"><code>display: none;
-float: right;</code></pre>
-
-<p></p>
-
-<p>table.source_code 
-<pre class="code ruby"><code>margin-left: 100px;
-border-left: 0px;
-display: table !important;</code></pre>
-
-<p></p>
+table.source_code {
+    margin-left: 100px;
+    border-left: 0px;
+    display: table !important;
+}</code></pre>
 </div></div>
 
     <div id="footer">
-  Generated on Tue Oct 23 13:59:24 2012 by
+  Generated on Tue Oct 23 14:01:25 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.3 (ruby-1.9.3).
 </div>
