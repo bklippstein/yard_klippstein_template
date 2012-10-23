@@ -9,7 +9,10 @@ Just some small improvements
 
 == Usage
 Put this in your .yardopts file:
-  --plugin yard_klippstein_template             
+  --plugin yard_klippstein_template       
+
+== CSS-File
+* {file:templates/default/fulldoc/html/css/klippstein.css klippstein.css}  
 
   
 == More Info
