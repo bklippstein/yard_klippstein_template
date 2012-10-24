@@ -3,6 +3,7 @@ Manifest.txt
 Rakefile.rb
 README.rdoc
 version.rb
+templates/default/fulldoc/html/setup.rb
 templates/default/fulldoc/html/css/klippstein.css
 templates/default/fulldoc/html/js/klippstein.js
 templates/default/layout/html/setup.rb
