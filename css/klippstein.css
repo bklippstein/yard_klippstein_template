@@ -82,5 +82,40 @@
       display: table !important;
   }
 
+  /* rdoc def list as table */
+  dl.rdoc-list {
+      overflow: hidden;
+      background: white; 
+      width: 100%;
+      border: none;
+      border-top: 1px solid #ccc;   
+      margin:0;
 
+  }
+  
+  dl.rdoc-list dt {
+      clear: left;
+      float: left;
+      background: white;       
+      width: 40%; 
+      font-family:monospace;   
+      font-weight: normal !important;   
+      font-size:1.1em;
+      white-space:nowrap;
+      margin:0;
+      padding: 5px 3px;
+ 
+  }
+  
+  dl.rdoc-list dd {
+      
+      background: white;  
+      white-space:nowrap;
+      border-bottom:1px solid #ccc;      
+      margin:0;
+      padding: 5px 3px;        
+  }    
+  
+  
 
+  
