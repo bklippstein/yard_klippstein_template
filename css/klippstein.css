@@ -27,15 +27,16 @@
 
 
 
-  /* method summary */
+  /* method summary: show as table */
 
   ul.summary  {
-    border-bottom: 1px #ccc dotted;
+    display: table;
+    border-top: 1px #ccc dotted;
     margin-left:0px; padding-left:0px;
   }
 
   ul.summary li {
-    border-top: 1px #ccc  dotted;
+    display: table-row;
     margin: 0px;
     padding: 1px 0px 1px 0px;
    
@@ -48,14 +49,18 @@
   }
 
   .summary .summary_signature {
+      display: table-cell;
       background: none;
       border: 0px;
       padding: 1px 10px;
+      border-bottom: 1px #ccc dotted;    
+      white-space:nowrap;      
   }
 
   .summary .summary_desc {
-      display: inline;
+      display: table-cell;
       margin:0px;
+      border-bottom: 1px #ccc dotted;
   }
 
   p.signature, h3.signature {
@@ -82,5 +87,37 @@
       display: table !important;
   }
 
+  /* rdoc def list as table */
+  dl.rdoc-list {
+      overflow: hidden;
+      background: white; 
+      width: 100%;
+      border: none;
+      border-top: 1px solid #ccc;   
+      margin:0;
 
+  }
+  
+  dl.rdoc-list dt {
+      clear: left;
+      float: left;
+      background: white;       
+      width: 40%; 
+      font-family:monospace;   
+      font-weight: normal !important;   
+      font-size:1.1em;
+      white-space:nowrap;
+      margin:0;
+      padding: 5px 3px;
+ 
+  }
+  
+  dl.rdoc-list dd {
+      
+      background: white;  
+      white-space:nowrap;
+      border-bottom:1px solid #ccc;      
+      margin:0;
+      padding: 5px 3px;        
+  }    
 
