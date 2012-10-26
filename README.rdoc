@@ -4,7 +4,9 @@ http://bklippstein.github.com/yard_klippstein_template/frames.html
 
 == Features
 Just some small improvements
-* clear visual grouping
+* clear visual grouping (headlines, lists)
+* method summary: show as table
+* rdoc def list: show as table
 * source code is always visible
 
 == Usage
