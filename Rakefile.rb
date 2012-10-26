@@ -17,15 +17,15 @@ Drumherum.github_username = 'bklippstein'
 #
 $hoe = Hoe.spec Drumherum.project_name do |p|
 
-  # self.rubyforge_name = 'yourgemx' # if different than 'yourgem'
-   
-  p.developer('Bjoern Klippstein', 'klippstein@klippstein.com')
   p.summary                 = 'Klippstein Template for Ruby YARD'  
-  p.description             = 'Clear visual grouping, some infos shown as table, source code is always visible'  
-  p.extra_dev_deps        << ['drumherum',    '>= 0.1.26']
+  p.description             = 'Klippstein Template for Ruby YARD: Clear visual grouping, some infos shown as table, source code is always visible'  
+  p.extra_deps            << ['yard',  '>= 0.8.3']  
+  p.extra_dev_deps        << ['drumherum',                '>= 0.1.27']
 
+
+  p.developer('Bjoern Klippstein', 'klippstein@klippstein.com')  
   p.remote_rdoc_dir = '' # Release to root only one project  
-  p.urls                  = ["http://bklippstein.github.com/yard_klippstein_template/index.html", Drumherum.url_source]
+  p.urls                  = ["http://bklippstein.github.com/yard_klippstein_template/index.html", 'https://github.com/bklippstein']
 
                     
 end

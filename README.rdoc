@@ -19,7 +19,7 @@ Put this in your .yardopts file:
   
 == More Info
 * *Documentation*: {http://bklippstein.github.com/yard_klippstein_template/frames.html github.com/yard_klippstein_template}
-* *Source* *code*: {https://github.com/bklippstein/yard_klippstein_template github.com/bklippstein/yard_klippstein_template}
+* *Source* *code*: {https://github.com/bklippstein/yard_klippstein_template github.com/bklippstein}
 * *License*: {http://creativecommons.org/licenses/by-sa/3.0/de/deed.en cc-by-sa Creative Commons Attribution-Share Alike 3.0 Germany}
 * *Autor*: {mailto:klippstein@klippstein.com Björn Klippstein}
 
