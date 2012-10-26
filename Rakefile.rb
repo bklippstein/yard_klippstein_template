@@ -24,7 +24,7 @@ $hoe = Hoe.spec Drumherum.project_name do
   extra_dev_deps        << ['drumherum',    '>= 0.1.26']
 
   remote_rdoc_dir = '' # Release to root only one project  
-  urls                  = [[Drumherum.url_docs], [Drumherum.url_source]]
+  urls                  = ["http://bklippstein.github.com/yard_klippstein_template/index.html", Drumherum.url_source]
 
                     
 end
