@@ -15,16 +15,17 @@ Drumherum.github_username = 'bklippstein'
 #  
 # http://nubyonrails.com/articles/tutorial-publishing-rubygems-with-hoe
 #
-$hoe = Hoe.spec Drumherum.project_name do 
+$hoe = Hoe.spec Drumherum.project_name do |p|
 
   # self.rubyforge_name = 'yourgemx' # if different than 'yourgem'
    
-  developer('Bjoern Klippstein', 'klippstein@klippstein.com')
-  summary               = 'Klippstein Template for Ruby YARD'  
-  extra_dev_deps        << ['drumherum',    '>= 0.1.26']
+  p.developer('Bjoern Klippstein', 'klippstein@klippstein.com')
+  p.summary                 = 'Klippstein Template for Ruby YARD'  
+  p.description             = 'Clear visual grouping, some infos shown as table, source code is always visible'  
+  p.extra_dev_deps        << ['drumherum',    '>= 0.1.26']
 
-  remote_rdoc_dir = '' # Release to root only one project  
-  urls                  = ["http://bklippstein.github.com/yard_klippstein_template/index.html", Drumherum.url_source]
+  p.remote_rdoc_dir = '' # Release to root only one project  
+  p.urls                  = ["http://bklippstein.github.com/yard_klippstein_template/index.html", Drumherum.url_source]
 
                     
 end

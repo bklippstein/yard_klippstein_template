@@ -1,0 +1,14 @@
+== 0.0.19 2012-10-26
+* rdoc def list: show as table
+* source code is always visible
+
+== 0.0.12 2012-10-25
+* clear visual grouping (headlines, lists)
+* source code is always visible
+
+== 0.0.3 2012-10-23
+* Initial public release
+ 
+  
+
+
