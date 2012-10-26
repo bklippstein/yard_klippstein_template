@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: RDoc::Markup::ToHtml
+  
+    &mdash; Documentation by YARD 0.8.3
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/klippstein.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../';
+  framesUrl = "../../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/klippstein.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (T)</a> &raquo;
+    <span class='title'>RDoc</span> &raquo; <span class='title'>Markup</span>
+     &raquo; 
+    <span class="title">ToHtml</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: RDoc::Markup::ToHtml
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">RDoc::Markup::ToHtml</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/yard_klippstein_template.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#list_end_for-instance_method" title="#list_end_for (instance method)">- (Object) <strong>list_end_for</strong>(list_type) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the HTML end-tag for <tt>list_type</tt>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#list_item_start-instance_method" title="#list_item_start (instance method)">- (Object) <strong>list_item_start</strong>(list_item, list_type) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the HTML tag for <tt>list_type</tt>, possible using a label from
+<tt>list_item</tt>.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="list_end_for-instance_method">
+  
+    - (<tt>Object</tt>) <strong>list_end_for</strong>(list_type) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the HTML end-tag for <tt>list_type</tt></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/yard_klippstein_template.rb', line 30</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_list_end_for'>list_end_for</span><span class='lparen'>(</span><span class='id identifier rubyid_list_type'>list_type</span><span class='rparen'>)</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_list_type'>list_type</span>
+  <span class='kw'>when</span> <span class='symbol'>:BULLET</span><span class='comma'>,</span> <span class='symbol'>:LALPHA</span><span class='comma'>,</span> <span class='symbol'>:NUMBER</span><span class='comma'>,</span> <span class='symbol'>:UALPHA</span> <span class='kw'>then</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/li&gt;</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>when</span> <span class='symbol'>:LABEL</span><span class='comma'>,</span> <span class='symbol'>:NOTE</span> <span class='kw'>then</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/dd&gt; &lt;/div&gt;</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RDoc</span><span class='op'>::</span><span class='const'>Error</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Invalid list type: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_list_type'>list_type</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="list_item_start-instance_method">
+  
+    - (<tt>Object</tt>) <strong>list_item_start</strong>(list_item, list_type) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the HTML tag for <tt>list_type</tt>, possible using a label from
+<tt>list_item</tt></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/yard_klippstein_template.rb', line 16</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_list_item_start'>list_item_start</span><span class='lparen'>(</span><span class='id identifier rubyid_list_item'>list_item</span><span class='comma'>,</span> <span class='id identifier rubyid_list_type'>list_type</span><span class='rparen'>)</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_list_type'>list_type</span>
+  <span class='kw'>when</span> <span class='symbol'>:BULLET</span><span class='comma'>,</span> <span class='symbol'>:LALPHA</span><span class='comma'>,</span> <span class='symbol'>:NUMBER</span><span class='comma'>,</span> <span class='symbol'>:UALPHA</span> <span class='kw'>then</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;li&gt;</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>when</span> <span class='symbol'>:LABEL</span><span class='comma'>,</span> <span class='symbol'>:NOTE</span> <span class='kw'>then</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;div class=</span><span class='tstring_end'>&quot;</span></span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>rdoc-dl-row</span><span class='tstring_end'>&quot;</span></span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt; &lt;dt&gt;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_to_html'>to_html</span> <span class='id identifier rubyid_list_item'>list_item</span><span class='period'>.</span><span class='id identifier rubyid_label'>label</span><span class='rbrace'>}</span><span class='tstring_content'>\n&lt;dd&gt;</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RDoc</span><span class='op'>::</span><span class='const'>Error</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Invalid list type: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_list_type'>list_type</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Fri Oct 26 10:29:46 2012 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a> 0.8.3
+  with <a href="http://bklippstein.github.com/yard_klippstein_template/index.html" 
+          title="Klippstein Template for Ruby YARD" 
+          target="_parent">
+          yard_klippstein_template
+          </a>  
+
+</div>
+
+  </body>
+</html>

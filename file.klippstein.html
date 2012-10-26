@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ASCII-8BIT" />
 <title>
   File: klippstein
   
@@ -67,13 +67,19 @@
 
     <div id="content"><div id='filecontents'>
 <pre class="code ruby"><code>/* Headlines */
+
 h2 {
-  padding: 10px 0 3px 0;
+  margin: 3em 0 0.5em 0;  
+  font-size: 1.7em;      
   border-top: 1px #555 solid;
   border-bottom: 0px;
-  margin: 3em 0 0.5em;
-  font-size: 1.7em;  
+  padding: 10px 0 3px 0;  /*f?r die Linie */
 }
+
+.docstring h3 {
+  margin: 1.5em 0 0.3em 0; 
+  font-size: 1.2em;  
+}  
 
 p.signature, h3.signature {
     font-family: Monaco,Consolas,Courier,monospace;
@@ -91,34 +97,42 @@ p.signature, h3.signature {
     margin-top: 15px;
 }
 
-/* method summary */
+/* method summary: show as table */
 
 ul.summary  {
-  border-bottom: 1px #ccc dotted;
-  margin-left:0px; padding-left:0px;
+  display: table;
+  border-top: 1px #c6c6c6 dotted;
+  margin: 2px 0 5px 0;  
+  padding-left:0px;
+  width: 100%;
 }
 
 ul.summary li {
-  border-top: 1px #ccc  dotted;
+  display: table-row;
   margin: 0px;
   padding: 1px 0px 1px 0px;
-
 }
 
 ul.summary a:link, ul.summary a:visited {
-    font-size: 0.9em;
+    font-size: 1.0em;
     font-weight:normal !important;
 }
 
 .summary .summary_signature {
+    display: table-cell;
     background: none;
     border: 0px;
     padding: 1px 10px;
+    border-bottom: 1px #c6c6c6 dotted;    
+    white-space:nowrap;      
 }
 
 .summary .summary_desc {
-    display: inline;
+    display: table-cell;
     margin:0px;
+    border-bottom: 1px #c6c6c6 dotted;
+    font-family: &quot;Lucida Sans&quot;,&quot;Lucida Grande&quot;,Verdana,Arial,sans-serif;
+      font-size: 13px;    
 }
 
 p.signature, h3.signature {
@@ -128,6 +142,7 @@ p.signature, h3.signature {
 }
 
 /* method details */
+
 .note.returns_void {
     display :none;
 }
@@ -144,44 +159,58 @@ table.source_code {
 }
 
 /* rdoc def list as table */
-dl.rdoc-list {
-    overflow: hidden;
-    background: white; 
-    width: 100%;
-    border: none;
-    border-top: 1px dotted #CCCCCC;   
-    margin:0;
 
+dl.rdoc-list {
+    display: table;
+    border: none;
+    border-top: 1px #c6c6c6 dotted;
+    padding-left:0px;
+    margin: 2px 0 5px 0;      
+    width: 100%;      
+}
+
+div.rdoc-dl-row {
+    display: table-row;  
+    margin: 0px;
+    padding: 2px 0px 2px 0px;      
+    line-height:1.5em;
 }
 
 dl.rdoc-list dt {
-    clear: left;
-    float: left;
-    background: white;       
-    width: 40%; 
+    display: table-cell;  
+    background: none;
+    border: 0px;
+    padding: 1px 10px;
+    border-bottom: 1px #c6c6c6 dotted;    
+    white-space:nowrap;   
     font-family:monospace;   
     font-weight: normal !important;   
-    font-size:1.1em;
-    white-space:nowrap;
-    margin:0;
-    padding: 5px 3px;
 
 }
 
 dl.rdoc-list dd {
-
+    display: table-cell;        
     background: white;  
-    white-space:nowrap;
-    border-bottom: 1px dotted #CCCCCC;     
+    border-bottom: 1px #c6c6c6 dotted;       
     margin:0;
-    padding: 5px 3px;        
+    padding: 1px 0px 1px 3px;        
+}    
+
+/* bullet lists */
+.docstring ul {
+  margin: 2px 0 5px 0;
 }</code></pre>
 </div></div>
 
     <div id="footer">
-  Generated on Fri Oct 26 09:01:27 2012 by
-  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.3 (ruby-1.9.3).
+  Generated on Fri Oct 26 10:29:46 2012 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a> 0.8.3
+  with <a href="http://bklippstein.github.com/yard_klippstein_template/index.html" 
+          title="Klippstein Template for Ruby YARD" 
+          target="_parent">
+          yard_klippstein_template
+          </a>  
+
 </div>
 
   </body>
