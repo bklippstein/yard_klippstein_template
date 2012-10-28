@@ -9,5 +9,6 @@ templates/default/fulldoc/html/css/klippstein.css
 templates/default/fulldoc/html/js/klippstein.js
 templates/default/layout/html/setup.rb
 templates/default/layout/html/footer.erb
+templates/default/module/html/item_summary.erb
 lib/yard_klippstein_template.rb
 

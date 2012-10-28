@@ -141,7 +141,10 @@
   }
   
   
-  
+  /* monospace font*/  
+  .object_link{
+      font-family:monospace;
+  }  
   
   
   
