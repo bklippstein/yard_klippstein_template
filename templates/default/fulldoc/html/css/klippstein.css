@@ -14,6 +14,12 @@
     margin: 1.5em 0 0.3em 0; 
     font-size: 1.2em;  
   }  
+  
+  
+  .docstring h4 {
+    margin: 1.3em 0 0.2em 0; 
+    font-size: 1.0em;  
+  }    
 
   p.signature, h3.signature {
       font-family: Monaco,Consolas,Courier,monospace;
