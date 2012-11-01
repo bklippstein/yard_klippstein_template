@@ -1,4 +1,19 @@
 
+  /* Box */
+  
+#filecontents dl.box, dl.box {
+    border: 0 none;
+    font-size: 1em;
+    width: 100%;
+}
+
+#filecontents dl.box dt, dl.box dt {
+    width: 20%;
+}
+
+#filecontents dl.box dd, dl.box dd {
+    width: 80%;
+}
 
   /* Headlines */
   

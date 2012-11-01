@@ -66,6 +66,45 @@
     <iframe id="search_frame"></iframe>
 
     <div id="content"><div id='filecontents'>
+<pre class="code ruby"><code><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>* Box *</span><span class='regexp_end'>/</span></span></code></pre>
+
+<p>#filecontents dl.box, dl.box 
+<pre class="code ruby"><code>display: table;
+border-top: 1px #c6c6c6 dotted;
+margin: 2px 0 5px 0;  
+padding-left:0px;
+width: 100%;</code></pre>
+
+<p></p>
+
+<p>#filecontents dl.box div, dl.box div {</p>
+
+<pre class="code ruby"><code>    display: table-row;  
+    margin: 0px;
+    padding: 2px 0px 2px 0px;      
+    line-height:1.5em;
+}</code></pre>
+
+<p>#filecontents dl.box dt, dl.box dt 
+<pre class="code ruby"><code>display: table-cell;  
+background: none;
+border: 0px;
+padding: 1px 10px;
+border-bottom: 1px #c6c6c6 dotted;    
+white-space:nowrap;   
+font-weight: normal !important;</code></pre>
+
+<p></p>
+
+<p>#filecontents dl.box dd, dl.box dd 
+<pre class="code ruby"><code>display: table-cell;        
+background: white;  
+border-bottom: 1px #c6c6c6 dotted;       
+margin:0;
+padding: 1px 0px 1px 3px;</code></pre>
+
+<p></p>
+
 <pre class="code ruby"><code>/* Headlines */
 
 h2 {
@@ -189,7 +228,6 @@ dl.rdoc-list dt {
     border-bottom: 1px #c6c6c6 dotted;    
     white-space:nowrap;   
     font-weight: normal !important;   
-
 }
 
 dl.rdoc-list dd {
@@ -212,7 +250,7 @@ dl.rdoc-list dd {
 </div></div>
 
     <div id="footer">
-  Generated on Thu Nov  1 09:40:32 2012 by
+  Generated on Thu Nov  1 10:06:44 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a> 0.8.3
   with <a href="http://bklippstein.github.com/yard_klippstein_template/index.html" 
           title="Klippstein Template for Ruby YARD" 
