@@ -71,13 +71,18 @@
 <p>#filecontents dl.box, dl.box 
 <pre class="code ruby"><code>display: table;
 border-top: 1px #c6c6c6 dotted;
-margin: 2px 0 5px 0;  
+margin: 0;  
 padding-left:0px;
 width: 100%;</code></pre>
 
 <p></p>
 
-<p>#filecontents dl.box div, dl.box div {</p>
+<p>#filecontents div.box-additions dl.box, div.box-additions dl.box 
+<pre class="code ruby"><code>border-top: none;</code></pre>
+
+<p></p>
+
+<p>#filecontents dl.box div.row, dl.box div.row {</p>
 
 <pre class="code ruby"><code>    display: table-row;  
     margin: 0px;
@@ -87,21 +92,28 @@ width: 100%;</code></pre>
 
 <p>#filecontents dl.box dt, dl.box dt 
 <pre class="code ruby"><code>display: table-cell;  
-background: none;
-border: 0px;
-padding: 1px 10px;
-border-bottom: 1px #c6c6c6 dotted;    
-white-space:nowrap;   
-font-weight: normal !important;</code></pre>
+background: none !important;
+border: 0px ;
+border-bottom: 1px #c6c6c6 dotted !important;    
+white-space:nowrap;
+font-weight: normal;
+padding: 1px 10px;      
+width: 25%;   
+overflow: visible;      
+text-align: left;    
+float: none;</code></pre>
 
 <p></p>
 
 <p>#filecontents dl.box dd, dl.box dd 
 <pre class="code ruby"><code>display: table-cell;        
-background: white;  
-border-bottom: 1px #c6c6c6 dotted;       
+background: none !important;  
+border: 0px ;      
+border-bottom: 1px #c6c6c6 dotted !important;       
 margin:0;
-padding: 1px 0px 1px 3px;</code></pre>
+padding: 1px 0px 1px 3px;    
+float: none;  
+width: 74%;</code></pre>
 
 <p></p>
 
@@ -228,14 +240,17 @@ dl.rdoc-list dt {
     border-bottom: 1px #c6c6c6 dotted;    
     white-space:nowrap;   
     font-weight: normal !important;   
+    width: 25%;   
+    overflow: visible;        
 }
 
 dl.rdoc-list dd {
     display: table-cell;        
-    background: white;  
+    background: none;  
     border-bottom: 1px #c6c6c6 dotted;       
     margin:0;
-    padding: 1px 0px 1px 3px;        
+    padding: 1px 0px 1px 3px;   
+    width: 74%;   
 }    
 
 /* bullet lists */
@@ -245,12 +260,12 @@ dl.rdoc-list dd {
 
 /* monospace font*/  
 .object_link{
-    font-family:monospace;
+    font-family: monospace;
 }</code></pre>
 </div></div>
 
     <div id="footer">
-  Generated on Thu Nov  1 10:06:44 2012 by
+  Generated on Thu Nov  1 10:40:58 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a> 0.8.3
   with <a href="http://bklippstein.github.com/yard_klippstein_template/index.html" 
           title="Klippstein Template for Ruby YARD" 
