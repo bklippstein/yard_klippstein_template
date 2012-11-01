@@ -1,4 +1,8 @@
 <div id="subclasses">
-    <dt class="r1">Subclasses:</dt>
-    <dd class="r1"><%= @subclasses.map {|name, child| linkify(child, name) }.join(", ") %></dd>
+  <dl class="box">
+    <div class="row">     
+    <dt class="r1 last">Subclasses:</dt>
+    <dd class="r1 last"><%= @subclasses.map {|name, child| linkify(child, name) }.join(", ") %></dd>
+    </div>      
+  </dl>
 </div>

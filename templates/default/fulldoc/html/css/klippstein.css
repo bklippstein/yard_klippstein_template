@@ -1,4 +1,37 @@
+  /* Box */
+  
+#filecontents dl.box, dl.box {
+    display: table;
+    border-top: 1px #c6c6c6 dotted;
+    margin: 2px 0 5px 0;  
+    padding-left:0px;
+    width: 100%;   
+}
 
+#filecontents dl.box div, dl.box div {
+      display: table-row;  
+      margin: 0px;
+      padding: 2px 0px 2px 0px;      
+      line-height:1.5em;
+  }
+
+#filecontents dl.box dt, dl.box dt {
+      display: table-cell;  
+      background: none;
+      border: 0px;
+      padding: 1px 10px;
+      border-bottom: 1px #c6c6c6 dotted;    
+      white-space:nowrap;   
+      font-weight: normal !important;   
+}
+
+#filecontents dl.box dd, dl.box dd {
+      display: table-cell;        
+      background: white;  
+      border-bottom: 1px #c6c6c6 dotted;       
+      margin:0;
+      padding: 1px 0px 1px 3px;  
+}
 
   /* Headlines */
   
@@ -130,7 +163,6 @@
       border-bottom: 1px #c6c6c6 dotted;    
       white-space:nowrap;   
       font-weight: normal !important;   
-
   }
   
   dl.rdoc-list dd {
