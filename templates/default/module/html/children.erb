@@ -1,0 +1,14 @@
+<div class="box-additions">
+  <dl class="box">
+    <div class="row">     
+    <dt class="r1 last">Defined Under Namespace</dt>
+    <dd class="r1 last">
+      <% @inner.each do |name, list| %>
+        <% if list.size > 0 %>
+          <strong class="<%= name %>"><%= name.to_s.capitalize %>:</strong> <%= list.map {|child| linkify(child, child.name) }.join(", ") %>
+        <% end %>
+      <% end %> 
+    </dd>
+    </div>      
+  </dl>
+</div>
