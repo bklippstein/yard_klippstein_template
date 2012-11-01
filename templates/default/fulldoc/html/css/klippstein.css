@@ -111,7 +111,9 @@
       border: 0px;
       padding: 1px 10px;
       border-bottom: 1px #c6c6c6 dotted;    
-      white-space:nowrap;      
+      white-space:nowrap;  
+      width: 25%;   
+      overflow: visible;           
   }
 
   .summary .summary_desc {
@@ -119,7 +121,8 @@
       margin:0px;
       border-bottom: 1px #c6c6c6 dotted;
       font-family: "Lucida Sans","Lucida Grande",Verdana,Arial,sans-serif;
-        font-size: 13px;    
+      font-size: 13px;   
+      width: 74%;         
   }
 
   p.signature, h3.signature {
