@@ -4,6 +4,7 @@ Manifest.txt
 Rakefile.rb
 README.rdoc
 version.rb
+templates/default/class/html/subclasses.erb
 templates/default/fulldoc/html/css/klippstein.css
 templates/default/fulldoc/html/js/klippstein.js
 templates/default/fulldoc/html/full_list_method.erb
