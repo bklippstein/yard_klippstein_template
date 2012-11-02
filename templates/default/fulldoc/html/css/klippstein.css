@@ -13,6 +13,18 @@
   #body {
       padding: 0 20px 20px 20px;
   }
+  
+  #toc {
+      background-color: #EEEEEE;  
+      border: none;
+  }
+  
+  #footer {
+      border-top: none;
+      padding: 10px 20px 10px 20px;
+      background-color: #EEEEEE;
+      margin-top: 10px;
+  }  
 
     /* Box */
     
@@ -69,7 +81,7 @@
   h2 {
     margin: 3em 0 0.5em 0;  
     font-size: 1.7em;      
-    border-top: 1px #555 solid;
+    /*border-top: 4px #EEEEEE solid;*/
     border-bottom: 0px;
     padding: 10px 0 3px 0;  /*fuer die Linie */
   }
@@ -146,9 +158,9 @@
   }
 
   p.signature, h3.signature {
-      background: none repeat scroll 0 0 #FAEECC;
-      border: 0;
-
+      background: none;
+      border: none;
+      border-top: 1px #c6c6c6 dotted       
   }
 
 
@@ -174,8 +186,8 @@
   
   dl.rdoc-list {
       display: table;
-      border: none;
-      border-top: 1px #c6c6c6 dotted;
+      border: none !important;
+      border-top: 1px #c6c6c6 dotted !important;
       padding-left:0px;
       margin: 2px 0 5px 0;      
       width: 100%;      
@@ -191,9 +203,9 @@
   
   dl.rdoc-list dt {
       display: table-cell;  
-      background: none;
+      background: none !important;
       border: 0px;
-      padding: 1px 10px;
+      padding: 1px 10px !important;
       border-bottom: 1px #c6c6c6 dotted;    
       white-space:nowrap;   
       font-weight: normal !important;   
@@ -205,8 +217,8 @@
       display: table-cell;        
       background: none;  
       border-bottom: 1px #c6c6c6 dotted;       
-      margin:0;
-      padding: 1px 0px 1px 3px;   
+      margin:0 !important;
+      padding: 1px 0px 1px 3px !important;   
       width: 74%;   
   }    
   

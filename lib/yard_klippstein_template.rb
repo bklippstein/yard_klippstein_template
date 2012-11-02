@@ -1,12 +1,16 @@
 
 YARD::Templates::Engine.register_template_path File.dirname(__FILE__) + '/../templates'
 
+# @!macro [new] project_header
+#  My Project Header
+
 
 # patch rdoc markup for table-like definition lists
 require 'rdoc'
 require 'rdoc/markup'
 require 'rdoc/markup/to_html'
- 
+
+# @!macro project_header 
 class RDoc::Markup::ToHtml
 
   ##
