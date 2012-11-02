@@ -16,6 +16,7 @@ templates/default/layout/html/project_header.erb
 templates/default/layout/html/setup.rb
 templates/default/module/html/box_info.erb
 templates/default/module/html/children.erb
+templates/default/module/html/constant_summary.erb
 templates/default/module/html/item_summary.erb
 templates/default/module/setup.rb
 lib/yard_klippstein_template.rb
