@@ -11,11 +11,16 @@
       <div class="clear"></div>
       <%= erb(:project_header) %>      
     </div>
+    
+    <div id="body">    
+      <iframe id="search_frame"></iframe>
+      <div id="content"><%= yieldall %></div>
+    </div>   
 
-    <iframe id="search_frame"></iframe>
-
-    <div id="content"><%= yieldall %></div>
-    <%= erb(:project_footer) %>      
-    <%= erb(:footer) %>
+    <div id="footer">      
+      <%= erb(:project_footer) %>      
+      <%= erb(:footer) %>
+    </div>     
+    
   </body>
 </html>
