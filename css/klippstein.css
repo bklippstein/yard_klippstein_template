@@ -80,7 +80,7 @@
   
   h2 {
     margin: 3em 0 0.5em 0;  
-    font-size: 1.7em;      
+    font-size: 1.5em;      
     /*border-top: 4px #EEEEEE solid;*/
     border-bottom: 0px;
     padding: 10px 0 3px 0;  /*fuer die Linie */
@@ -88,7 +88,7 @@
   
   .docstring h3 {
     margin: 1.5em 0 0.3em 0; 
-    font-size: 1.2em;  
+    font-size: 1.0em;  
   }  
   
   
@@ -233,9 +233,44 @@
       font-family: monospace;
   }  
   
+  /* Constants as table */   
   
-  
-  
+  dl.constants {
+      display: table;
+      border: none !important;
+      border-top: 1px #c6c6c6 dotted !important;
+      padding-left:0px;
+      margin: 2px 0 5px 0;      
+      width: 100%;    
+  } 
+
+  div.constants-dl-row {
+      display: table-row;  
+      margin: 0px;
+      padding: 2px 0px 2px 0px;      
+      line-height:1.5em;
+  }  
+
+  dl.constants dt {
+      display: table-cell;  
+      background: none !important;
+      border: 0px;
+      padding: 1px 10px !important;
+      border-bottom: 1px #c6c6c6 dotted;    
+      white-space:nowrap;   
+      font-weight: normal !important;   
+      width: 25%;   
+      overflow: visible;    
+  }  
+
+  dl.constants dd {
+      display: table-cell;        
+      background: none;  
+      border-bottom: 1px #c6c6c6 dotted;       
+      margin:0 !important;
+      padding: 1px 0px 1px 3px !important;   
+      width: 74%;  
+  }
   
   
   
