@@ -10,6 +10,9 @@ templates/default/fulldoc/html/js/klippstein.js
 templates/default/fulldoc/html/full_list_method.erb
 templates/default/fulldoc/html/setup.rb
 templates/default/layout/html/footer.erb
+templates/default/layout/html/layout.erb
+templates/default/layout/html/project_footer.erb
+templates/default/layout/html/project_header.erb
 templates/default/layout/html/setup.rb
 templates/default/module/html/box_info.erb
 templates/default/module/html/children.erb
