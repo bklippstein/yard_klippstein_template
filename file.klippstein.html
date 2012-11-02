@@ -61,75 +61,80 @@
   
 </div>
       <div class="clear"></div>
+      <div id="project-header">
+  Project Header
+</div>      
     </div>
+    
+    <div id="body">    
+      <iframe id="search_frame"></iframe>
+      <div id="content"><div id='filecontents'>
+<pre class="code ruby"><code>body {
+    margin: 0;
+    padding: 0; 
+}
 
-    <iframe id="search_frame"></iframe>
+#header {
+    padding: 10px 20px 10px 20px;
+    background-color: #EEEEEE;
+    margin-bottom: 10px;
+}
 
-    <div id="content"><div id='filecontents'>
-<p>body 
-<pre class="code ruby"><code>margin: 0;
-padding: 10px 20px 10px 20px;</code></pre>
+#body {
+    padding: 0 20px 20px 20px;
+}
 
-<p></p>
+  /* Box */
 
-<p>#header 
-<pre class="code ruby"><code>background-color: #EEEEEE;
-margin-bottom: 10px;</code></pre>
+#filecontents dl.box, dl.box {
+    display: table;
+    border-top: 1px #c6c6c6 dotted;
+    margin: 0;  
+    padding-left:0px;
+    width: 100%;   
+}
 
-<p></p>
+#filecontents div.box-additions dl.box, div.box-additions dl.box {
+    border-top: none;
+}
 
-<pre class="code ruby"><code><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>* Box *</span><span class='regexp_end'>/</span></span></code></pre>
+#filecontents dl.box div.row, dl.box div.row {
+      display: table-row;  
+      margin: 0px;
+      padding: 2px 0px 2px 0px;      
+      line-height:1.5em;
+  }
 
-<p>#filecontents dl.box, dl.box 
-<pre class="code ruby"><code>display: table;
-border-top: 1px #c6c6c6 dotted;
-margin: 0;  
-padding-left:0px;
-width: 100%;</code></pre>
+#filecontents dl.box dt, dl.box dt {
+      display: table-cell;  
+      background: none !important;
+      border: 0px ;
+      border-bottom: 1px #c6c6c6 dotted !important;    
+      white-space:nowrap;
+      font-weight: normal;
+      padding: 1px 10px;      
+      width: 25%;   
+      overflow: visible;      
+      text-align: left;    
+      float: none;
+}
 
-<p></p>
+#filecontents dl.box dd, dl.box dd {
+      display: table-cell;        
+      background: none !important;  
+      border: 0px ;      
+      border-bottom: 1px #c6c6c6 dotted !important;       
+      margin:0;
+      padding: 1px 0px 1px 3px;    
+      float: none;  
+      width: 74%;   
+}
 
-<p>#filecontents div.box-additions dl.box, div.box-additions dl.box 
-<pre class="code ruby"><code>border-top: none;</code></pre>
+  /* Headlines */
 
-<p></p>
-
-<p>#filecontents dl.box div.row, dl.box div.row {</p>
-
-<pre class="code ruby"><code>    display: table-row;  
-    margin: 0px;
-    padding: 2px 0px 2px 0px;      
-    line-height:1.5em;
-}</code></pre>
-
-<p>#filecontents dl.box dt, dl.box dt 
-<pre class="code ruby"><code>display: table-cell;  
-background: none !important;
-border: 0px ;
-border-bottom: 1px #c6c6c6 dotted !important;    
-white-space:nowrap;
-font-weight: normal;
-padding: 1px 10px;      
-width: 25%;   
-overflow: visible;      
-text-align: left;    
-float: none;</code></pre>
-
-<p></p>
-
-<p>#filecontents dl.box dd, dl.box dd 
-<pre class="code ruby"><code>display: table-cell;        
-background: none !important;  
-border: 0px ;      
-border-bottom: 1px #c6c6c6 dotted !important;       
-margin:0;
-padding: 1px 0px 1px 3px;    
-float: none;  
-width: 74%;</code></pre>
-
-<p></p>
-
-<pre class="code ruby"><code>/* Headlines */
+h1 {
+    border-top: none;
+}  
 
 h2 {
   margin: 3em 0 0.5em 0;  
@@ -278,17 +283,23 @@ dl.rdoc-list dd {
     font-family: monospace;
 }</code></pre>
 </div></div>
+    </div>   
 
-    <div id="footer">
-  Generated on Fri Nov  2 12:26:36 2012 by
-  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a> 0.8.3
-  with <a href="http://bklippstein.github.com/yard_klippstein_template/index.html" 
-          title="Klippstein Template for Ruby YARD" 
-          target="_parent">
-          yard_klippstein_template
-          </a>  
+    <div id="footer">      
+      <div id="project-footer">
+  Project Footer
+</div>      
+      Generated on Fri Nov  2 12:56:57 2012 by
+<a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a> 0.8.3
+with <a href="http://bklippstein.github.com/yard_klippstein_template/index.html" 
+        title="Klippstein Template for Ruby YARD" 
+        target="_parent">
+        yard_klippstein_template
+        </a>  
 
-</div>
 
+
+    </div>     
+    
   </body>
 </html>
